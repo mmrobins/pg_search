@@ -18,7 +18,7 @@ module PgSearch
       end
 
       def to_sql
-        "coalesce(#{expression}::text, '')"
+        expression
       end
 
       private
